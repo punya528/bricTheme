@@ -1,0 +1,20 @@
+#header {
+  display: flex;
+  display: -webdit-flex;
+  background-color: black;
+  cursor: w-resize;
+}
+
+.head {
+  width: 100vw;
+  padding: 0px;
+  height: auto;
+  flex-flow: row wrap;
+
+}
+
+.pager__item {
+  padding: 0 12px;
+  display: block;
+  border: 1px solid red;
+}
