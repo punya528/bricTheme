@@ -5,6 +5,23 @@
   cursor: w-resize;
 }
 
+
+#mainBar {
+  display: flex;
+  display: -webdit-flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#mobileBar {
+  display: flex;
+  display: -webdit-flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+
+}
+
 .head {
   width: 100vw;
   padding: 0px;
@@ -36,15 +53,12 @@
   /* Standard syntax */
 }
 
-#mainBar {
-  display: flex;
-  display: -webdit-flex;
-  position: fixed;
+.topbar {
   top: 0px;
   width: 100%;
   height: 80px;
   z-index: 9999;
-  background: white;
+  position: fixed;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(black, rgba(252, 252, 252, 0));
   /* For Safari 5.1 to 6.0 */
@@ -56,29 +70,60 @@
   /* Standard syntax */
 }
 
+
 .font-bar {
   font-size: 20px;
   font-style: normal;
+  text-align: center;
   color: white;
   margin-top: 20px;
   flex-grow: 1;
+  /*font-family: 'Bellefair', serif;*/
+  font-family: 'Audiowide', cursive;
+  /*font-family: 'Share', cursive;*/
+  font-family: 'Kumar One Outline', cursive;
+  /*font-family: 'Press Start 2P', cursive; -- font 8 bit*/
+  font-family: 'Fredericka the Great', cursive;
 }
 
 .font-bar:hover {
-  text-decoration: none;;
-  animation:fadeFont 0.5s;
- -webkit-animation:fadeFont 0.5s;
- color:red;
+  text-decoration: none;
+  ;
+  animation: fadeFont 0.5s;
+  -webkit-animation: fadeFont 0.5s;
+  color: red;
 }
+
 
 /* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes fadeFont {
-    from {color: white;}
-    to {color: red;}
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
 }
 
+
 /* Standard syntax */
+
 @keyframes fadeFont {
-    from {color: white;}
-    to {color: red;}
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+
+.font-bar-m{
+  font-size: 15px;
+}
+.m-menu-txt {
+  border: solid rgb(191, 102, 102) 1px;
+  width: 70px;
+  height: 30px;
+
 }

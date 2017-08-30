@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TEST </title>
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -11,19 +12,28 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bellefair|Cardo|Chonburi|Cookie|Fredericka+the+Great|Kumar+One+Outline|Lobster|Monoton|Pattaya|Press+Start+2P|Righteous|Share" rel="stylesheet">
 
 </head>
 
 <body>
-  <div id="mainBar" class="justify-content-center">
-    <a class="font-bar col-md-1" href="#">HOME</a>
-    <a class="font-bar col-md-1" href="#">RACE</a>
-    <a class="font-bar col-md-1" href="#">CALENDAR</a>
-    <a class="font-bar col-md-1" href="#">GALLERY</a>
-    <a class="font-bar col-md-1" href="#">CONTACK</a>
 
-
+  <!-- destrop bar -->
+  <div id="mainBar" class="topbar hidden-sm-down">
+    <a class="font-bar" href="#">HOME</a>
+    <a class="font-bar" href="#">RACE</a>
+    <a class="font-bar" href="#">CALENDAR</a>
+    <a class="font-bar" href="#">GALLERY</a>
+    <a class="font-bar" href="#">CONTACK</a>
   </div>
+
+  <!-- mobile bar -->
+  <div id="mobileBar" class="topbar hidden-md-up">
+    <div class="m-menu-txt">
+      <a href="#menu-toggle" style="width:30px" class="font-bar font-bar-m" id="menu-toggle">MENU</a>
+    </div>
+  </div>
+
   <section class="row regular slider " id="header" style="">
     <div id="test" class="head col-md-12" data-thumb="testbar.png">
       <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
