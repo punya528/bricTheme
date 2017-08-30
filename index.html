@@ -85,6 +85,7 @@
       var video = document.getElementsByTagName("video");
       console.log(video);
       for (i = 0; i < video.length; i++) {
+        video[i].load();
         video[i].play();
         console.log(video[i]);
       }
