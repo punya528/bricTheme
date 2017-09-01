@@ -92,6 +92,9 @@
 
 }
 
+li{
+  list-style-type: none;
+}
 .center{
   justify-content: center;
 }
@@ -100,7 +103,6 @@
 
 .font-bar:hover {
   text-decoration: none;
-  ;
   animation: fadeFont 0.5s;
   -webkit-animation: fadeFont 0.5s;
   color: rgb(191, 23, 23);
@@ -130,15 +132,9 @@
   }
 }
 
-.font-bar-m {
-  font-size: 15px;
-}
+/* Safari 4.0 - 8.0 */
 
-.m-menu-txt {
-  border: solid white 1px;
-  width: 70px;
-  height: 30px;
-}
+
 
 .dropdown-menu {}
 
