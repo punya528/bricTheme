@@ -2,9 +2,7 @@
   animation: exit 5s;
   -webkit-animation: exit 5s;
 }
-#{
-  padding-right: 20px;
-}
+
 
 #mobileBar {
   justify-content: center;
