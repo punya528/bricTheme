@@ -1,6 +1,6 @@
 $("#mMenu").mousedown(function(event) {
   TweenMax.to("#mobileBar", 1, {
-    x: 0
+    x: "0%"
   });
 
 
@@ -8,6 +8,6 @@ $("#mMenu").mousedown(function(event) {
 
 $("#mBarExit").mousedown(function(event) {
   TweenMax.to("#mobileBar", 1, {
-    x: 200
+    x: "100%"
   });
 });
