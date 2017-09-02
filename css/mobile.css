@@ -3,15 +3,15 @@
   -webkit-animation: exit 5s;
 }
 
-
 #mobileBar {
   justify-content: center;
   width: 100%;
   position: fixed;
   right: 0px;
   background-color: black;
-  min-height: 100vh;
   top: 0px;
+  overflow-y:auto;
+  height:100vh;
 }
 
 #mBarExit {
@@ -20,11 +20,11 @@
   right: 0px;
   border: 2px solid white;
   padding: 5px;
-background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.35);
   border-radius: 100px;
   font-size: 7px;
   color: red;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #mMenu {
@@ -44,7 +44,7 @@ background-color: rgba(255, 255, 255, 0.35);
   background: linear-gradient(white, rgba(255, 0, 0, 0));
   /* Standard syntax */
   border: solid white 1px;
-  padding:5px;
+  padding: 5px;
 }
 
 @-webkit-keyframes testOpen {
@@ -65,8 +65,6 @@ background-color: rgba(255, 255, 255, 0.35);
   }
 }
 
-
-
 @-webkit-keyframes testExit {
   from {
     right: 0px;
@@ -83,4 +81,18 @@ background-color: rgba(255, 255, 255, 0.35);
   to {
     right: -200px;
   }
+}
+
+p.font-bar-sub {
+  color: rgb(170, 170, 170);
+}
+
+.font-bar-sub {
+  font-size: 15px;
+}
+
+#mMenuContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

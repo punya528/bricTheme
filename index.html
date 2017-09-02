@@ -70,48 +70,48 @@
   <!-- ................... MOBILE BAR .......................---------->
   <!-- ............................................................. -->
   <div class="topbar hidden-lg-up" id="mBar">
-    <div id="mobileBar" class="mobileBar">
+    <div id="mobileBar" class="mobileBar" style="">
       <div id="mBarExit" class="font-bar rounded-circle">X</div>
-      <ul>
-        <!--HOME-->
-        <a class="font-bar" href="#">HOME</a>
-
-        <!-- RACE -->
-        <div class="dropdown font-bar" style="background-color:none">
-          <a href="#" class="dropdown-toggle font-bar" data-toggle="dropdown">RACE <b class="caret"></b></a>
-          <ul class="dropdown-menu " style="left:0px">
-            <div class="">
-              <li class="font-bar">NATIONAL RACEPROGRAM</li>
-              <li><a class="font-bar" href="#">SUPER GT</a></li>
-            </div>
-            <div class="">
-              <li class="font-bar">INTERNATIONAL RACEPROGRAM</li>
-              <li><a class="font-bar" href="#">PTT BRIC SUPERBIKE</a></li>
-            </div>
-          </ul>
+      <div id="mMenuContent" >
+        <a class="font-bar " href="#race">
+          HOME
+        </a>
+        <a class="font-bar " data-toggle="collapse" href="#race" aria-expanded="false" aria-controls="race">
+          RACE <b class="caret"></b>
+        </a>
+        <div class="collapse" id="race">
+          <p class="font-bar font-bar-sub" style="color:rgb(170, 170, 170)">INTERNATION RACEPROGRAM</p>
+          <a class="font-bar font-bar-sub" href="#">SUPER GT</a>
+          <p class="font-bar font-bar-sub">NATION RACEPROGRAM</p>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
         </div>
-
-        <!-- CALENDAR -->
-        <a class="font-bar" href="#">CALENDAR</a>
-
-        <!-- GALLERY -->
-        <div class="dropdown font-bar" style="background-color:none">
-          <a href="#" class="dropdown-toggle font-bar" data-toggle="dropdown">GALLERY <b class="caret"></b></a>
-          <ul class="dropdown-menu " style="">
-            <div class="">
-              <li class="font-bar">GALLERY</li>
-              <li><a class="font-bar" href="#">SUPER GT</a></li>
-              <li><a class="font-bar" href="#">PTT BRIC SUPERBIKE</a></li>
-
-            </div>
-            <div class="">
-              <li class="font-bar">VIDEO</li>
-              <li><a class="font-bar" href="#">PTT BRIC SUPERBIKE</a></li>
-            </div>
-          </ul>
+        <a class="font-bar " href="#race">
+          CALENDAR
+        </a>
+        <a class="font-bar" data-toggle="collapse" href="#gallery" aria-expanded="false" aria-controls="gallery">
+          GALLERY <b class="caret"></b>
+        </a>
+        <div class="font-bar collapse " id="gallery">
+          <p class="font-bar font-bar-sub">GALLERY</p>
+          <a class="font-bar font-bar-sub" href="#">SUPER GT</a>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
+          <p class="font-bar font-bar-sub">VIDEO</p>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
+          <p class="font-bar font-bar-sub">GALLERY</p>
+          <a class="font-bar font-bar-sub" href="#">SUPER GT</a>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
+          <p class="font-bar font-bar-sub">VIDEO</p>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
+          <p class="font-bar font-bar-sub">GALLERY</p>
+          <a class="font-bar font-bar-sub" href="#">SUPER GT</a>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
+          <p class="font-bar font-bar-sub">VIDEO</p>
+          <a class="font-bar font-bar-sub" href="#">PTT BRICSUPERBIKE</a>
         </div>
-        <a class="font-bar" href="#">CONTACK</a>
-      </ul>
+        <a class="font-bar " href="#race">
+          CONTACK
+        </a>
+      </div>
     </div>
     <div id="mMenu">
       <a href="#menu-toggle" class="font-bar" id="menu-toggle">MENU</a>
