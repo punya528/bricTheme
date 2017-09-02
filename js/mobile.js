@@ -1,13 +1,26 @@
 $("#mMenu").mousedown(function(event) {
-  TweenMax.to("#mobileBar", 1, {
-    x: "0%"
-  });
+  open();
 
 
 });
 
 $("#mBarExit").mousedown(function(event) {
+  exit();
+});
+
+
+window.onload = function() {
+  exit();
+}
+
+function open() {
+  TweenMax.to("#mobileBar", 1, {
+    x: "0%"
+  });
+}
+
+function exit() {
   TweenMax.to("#mobileBar", 1, {
     x: "100%"
   });
-});
+}
