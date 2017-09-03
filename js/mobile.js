@@ -9,9 +9,6 @@ $("#mBarExit").mousedown(function(event) {
 });
 
 
-window.onload = function() {
-  exit();
-}
 
 function open() {
   TweenMax.to("#mobileBar", 1, {
