@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" href="css/flex.css" />
+
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -24,55 +26,97 @@
 
 <body>
 
+  <style>
+    .jumbotron {
+      margin-top: 10px;
+      padding: 10px 0;
+      h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+    }
+
+    footer {
+      padding-top: 150px;
+    }
+
+    .dropdown-menu {
+      background-color: black;
+      width: 400px;
+    }
+
+    .dropdown-menu>ul>li>a {
+      font-size: 15px;
+    }
+
+    .dropdown-menu>ul>p {
+      font-size: 15px;
+    }
+    .bar{
+      margin-top:20px;
+    }
+  </style>
+
   <!-- ................... DESTOP BAR .......................---------->
   <!-- ............................................................. -->
-  <div id="mainBar" class="topbar hidden-md-down">
-    <!--HOME-->
-    <a class="font-bar" href="#">HOME</a>
-
-    <!-- RACE -->
-    <div class="dropdown font-bar" style="background-color:none">
-      <a href="#" class="dropdown-toggle font-bar" data-toggle="dropdown">RACE <b class="caret"></b></a>
-      <ul class="dropdown-menu " style="">
-        <div class="">
-          <li class="font-bar">NATIONAL RACEPROGRAM</li>
-          <li><a class="font-bar" href="#">SUPER GT</a></li>
-        </div>
-        <div class="">
-          <li class="font-bar">INTERNATIONAL RACEPROGRAM</li>
-          <li><a class="font-bar" href="#">PTT BRIC SUPERBIKE</a></li>
-        </div>
+  <div id="destopBar" class="topbar hidden-md-down">
+    <li  role="presentation" class="active bar"><a class="font-bar" href="#">HOME</a></li>
+    <li  role="presentation" class="dropdown bar">
+      <a id="drop4" href="#" class="dropdown-toggle font-bar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+              RACE<span class="caret"></span>
+            </a>
+      <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+        <ul>
+          <p class="font-bar">INTERNATIONAL RACE PROGRAM</p>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">ASER ROAD RACING</a></li>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">MOTO GP</a></li>
+        </ul>
+        <ul>
+          <p class="font-bar">NATIONAL RACE PROGRAM</p>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">PTT BRIC SUPER BIKE</a></li>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">THAILAND SUPER SERIES</a></li>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER TORBO</a></li>
+        </ul>
       </ul>
-    </div>
-
-    <!-- CALENDAR -->
-    <a class="font-bar" href="#">CALENDAR</a>
-
-    <!-- GALLERY -->
-    <div class="dropdown font-bar" style="background-color:none">
-      <a href="#" class="dropdown-toggle font-bar" data-toggle="dropdown">GALLERY <b class="caret"></b></a>
-      <ul class="dropdown-menu " style="">
-        <div class="">
-          <li class="font-bar">GALLERY</li>
-          <li><a class="font-bar" href="#">SUPER GT</a></li>
-          <li><a class="font-bar" href="#">PTT BRIC SUPERBIKE</a></li>
-
-        </div>
-        <div class="">
-          <li class="font-bar">VIDEO</li>
-          <li><a class="font-bar" href="#">PTT BRIC SUPERBIKE</a></li>
-        </div>
+    </li>
+    <li role="presentation" class="active bar"><a class="font-bar" href="#">CARLENDAR</a></li>
+    <li role="presentation" class="dropdown bar">
+      <a id="drop4" href="#" class="dropdown-toggle font-bar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+              GALLERY<span class="caret"></span>
+            </a>
+      <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+        <ul>
+          <p class="font-bar">GALLERY</p>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+        </ul>
+        <ul>
+          <p class="font-bar">VIDEO</p>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">PTT BRICSUPERBIKE</a></li>
+        </ul>
       </ul>
-    </div>
-    <a class="font-bar" href="#">CONTACK</a>
+    </li>
+    <li role="presentation" class="active bar"><a class="font-bar" href="#">CONTACT</a></li>
+
   </div>
+
+  <script>
+    $('.dropdown').on('show.bs.dropdown', function(e) {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+    });
+
+    $('.dropdown').on('hide.bs.dropdown', function(e) {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+    });
+  </script>
 
   <!-- ................... MOBILE BAR .......................---------->
   <!-- ............................................................. -->
-  <div class="topbar hidden-lg-up" id="mBar">
+  <div id="mBar" class="topbar hidden-lg-up">
     <div id="mobileBar" class="mobileBar" style="">
       <div id="mBarExit" class="font-bar rounded-circle">X</div>
-      <div id="mMenuContent" >
+      <div id="mMenuContent">
         <a class="font-bar " href="#race">
           HOME
         </a>
@@ -132,9 +176,8 @@
 
     </div>
     <div class="head col-md-12" data-thumb="testbar.png">
-      <img style="width:100%;" src="images/bg0.jpg" class="img-fluid">
+      <img style="width:100%;" src="images/bg0.png" class="img-fluid">
       <div class="head-foot"></div>
-
     </div>
 
   </section>

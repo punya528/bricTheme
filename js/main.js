@@ -27,7 +27,7 @@ function setImg() {
   console.log(deltaX);
   if (Math.abs(deltaX) < screen.width / 2) {
     var head = document.getElementsByClassName("head");
-    
+
     for (i = 0; i < head.length; i++) {
       var tempX = head[i].style.left;
       var l = tempX.length;

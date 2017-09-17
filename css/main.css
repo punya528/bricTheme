@@ -5,12 +5,15 @@
   cursor: w-resize;
 }
 
-#mainBar {
+#destopBar {
   display: flex;
   display: -webdit-flex;
   justify-content: space-around;
   text-align: center;
 }
+
+ul { list-style:none;}
+li {list-style:none;}
 
 #mobileBar {
   display: flex;
@@ -87,15 +90,8 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-.test-font{
-  /*font-family: 'Cormorant Garamond', serif;*/
 
-}
-
-li{
-  list-style-type: none;
-}
-.center{
+.center {
   justify-content: center;
 }
 
@@ -107,8 +103,6 @@ li{
   -webkit-animation: fadeFont 0.5s;
   color: rgb(191, 23, 23);
 }
-
-
 
 
 /* Safari 4.0 - 8.0 */
@@ -134,26 +128,7 @@ li{
   }
 }
 
+
 /* Safari 4.0 - 8.0 */
 
-
-
 .dropdown-menu {}
-
-ul.dropdown-menu {
-  background-color: rgba(7, 8, 24, 0.9);
-  width: 500px;
-  /*display: flex;*/
-  flex-flow: row wrap;
-  justify-content: space-between;
-  border: solid white 1px;
-  align-items: center;
-}
-
-.racetype {
-  width: 350px;
-}
-
-.dropdown-menu>div>li>a {
-  font-size: 15px;
-}
