@@ -52,53 +52,55 @@
     .dropdown-menu>ul>p {
       font-size: 15px;
     }
-    .bar{
-      margin-top:20px;
+
+    .bar {
+      margin-top: 20px;
     }
   </style>
 
   <!-- ................... DESTOP BAR .......................---------->
   <!-- ............................................................. -->
-  <div id="destopBar" class="topbar hidden-md-down">
-    <li  role="presentation" class="active bar"><a class="font-bar" href="#">HOME</a></li>
-    <li  role="presentation" class="dropdown bar">
-      <a id="drop4" href="#" class="dropdown-toggle font-bar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+  <div class="topbar hidden-md-down" style="">
+    <div  id="destopBar"  style="width:50%;">
+      <li role="presentation" class="active bar"><a class="font-bar" href="#">HOME</a></li>
+      <li role="presentation" class="dropdown bar">
+        <a id="drop4" href="#" class="dropdown-toggle font-bar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
               RACE<span class="caret"></span>
             </a>
-      <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-        <ul>
-          <p class="font-bar">INTERNATIONAL RACE PROGRAM</p>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">ASER ROAD RACING</a></li>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">MOTO GP</a></li>
+        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+          <ul>
+            <p class="font-bar">INTERNATIONAL RACE PROGRAM</p>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">ASER ROAD RACING</a></li>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">MOTO GP</a></li>
+          </ul>
+          <ul>
+            <p class="font-bar">NATIONAL RACE PROGRAM</p>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">PTT BRIC SUPER BIKE</a></li>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">THAILAND SUPER SERIES</a></li>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER TORBO</a></li>
+          </ul>
         </ul>
-        <ul>
-          <p class="font-bar">NATIONAL RACE PROGRAM</p>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">PTT BRIC SUPER BIKE</a></li>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">THAILAND SUPER SERIES</a></li>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER TORBO</a></li>
-        </ul>
-      </ul>
-    </li>
-    <li role="presentation" class="active bar"><a class="font-bar" href="#">CARLENDAR</a></li>
-    <li role="presentation" class="dropdown bar">
-      <a id="drop4" href="#" class="dropdown-toggle font-bar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+      </li>
+      <li role="presentation" class="active bar"><a class="font-bar" href="#">CARLENDAR</a></li>
+      <li role="presentation" class="dropdown bar">
+        <a id="drop4" href="#" class="dropdown-toggle font-bar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
               GALLERY<span class="caret"></span>
             </a>
-      <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-        <ul>
-          <p class="font-bar">GALLERY</p>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+          <ul>
+            <p class="font-bar">GALLERY</p>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+          </ul>
+          <ul>
+            <p class="font-bar">VIDEO</p>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
+            <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">PTT BRICSUPERBIKE</a></li>
+          </ul>
         </ul>
-        <ul>
-          <p class="font-bar">VIDEO</p>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">SUPER GT</a></li>
-          <li role="presentation"><a class="font-bar" role="menuitem" tabindex="-1" href="https://twitter.com/fat">PTT BRICSUPERBIKE</a></li>
-        </ul>
-      </ul>
-    </li>
-    <li role="presentation" class="active bar"><a class="font-bar" href="#">CONTACT</a></li>
-
+      </li>
+      <li role="presentation" class="active bar"><a class="font-bar" href="#">CONTACT</a></li>
+    </div>
   </div>
 
   <script>
@@ -166,7 +168,7 @@
     </video>
       <div class="head-foot"></div>
     </div>
-    <div class="head col-md-12" data-thumb="testbar.png">
+    <!--<div class="head col-md-12" data-thumb="testbar.png">
       <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
        <source src="video/page2.mp4"
        type="video/mp4">
@@ -178,7 +180,7 @@
     <div class="head col-md-12" data-thumb="testbar.png">
       <img style="width:100%;" src="images/bg0.png" class="img-fluid">
       <div class="head-foot"></div>
-    </div>
+    </div>-->
 
   </section>
 

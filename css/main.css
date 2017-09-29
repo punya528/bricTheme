@@ -12,8 +12,13 @@
   text-align: center;
 }
 
-ul { list-style:none;}
-li {list-style:none;}
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
 
 #mobileBar {
   display: flex;
@@ -60,6 +65,8 @@ li {list-style:none;}
   height: 80px;
   z-index: 9999;
   position: fixed;
+  display: flex;
+  justify-content: center;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(black, rgba(252, 252, 252, 0));
   /* For Safari 5.1 to 6.0 */
@@ -89,7 +96,6 @@ li {list-style:none;}
   font-family: 'Cormorant Garamond', serif;
   font-family: 'Orbitron', sans-serif;
 }
-
 
 .center {
   justify-content: center;
