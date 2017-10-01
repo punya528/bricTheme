@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" type="text/css" href="css/mobile.css" />
   <link rel="stylesheet" type="text/css" href="css/flex.css" />
+  <link rel="stylesheet" type="text/css" href="css/head_video_slide.css"/>
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -161,23 +162,72 @@
 
   <!-- ................... HEADER .......................---------->
   <!-- ............................................................. -->
-  <section class="row regular slider " id="header" style="">
-      <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
-       <source src="video/page2.mp4"
-       type="video/mp4">
-       Your browser does not support the video tag.
-    </video>
-      <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
-       <source src="video/page1.mp4"
-       type="video/mp4">
-       Your browser does not support the video tag.
-    </video>
+  <!-- reference examples at https://www.idangero.us/swiper/demos/#.Vl8kD9-rRHc -->
+  <section id="lab_video_slider">
+    <div class="container-fluid">
+      <div class="row">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <!--<div class="head col-md-12" data-thumb="testbar.png">
-      <img style="width:100%;" src="images/bg0.png" class="img-fluid">
-      <div class="head-foot"></div>
-    </div>-->
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
 
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div id="slide_one" class="swiper-slide">
+              <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
+               <source src="video/page2.mp4"
+               type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
+            </div>
+
+            <div id="slide_two" class="swiper-slide">
+              <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
+               <source src="video/page1.mp4"
+               type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
+
+            </div>
+
+            <div id="slide_three" class="swiper-slide">
+              <video width="100%" height="auto" poster="images/bg0.png" loop muted playsinline autoplay preload="auto">
+               <source src="video/page2.mp4"
+               type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+
+            spaceBetween: 0,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+          });
+        </script>
+      </div>
+      <!-- end .row -->
+    </div>
+    <!-- end .container-->
+    </div>
+    <!-- end #section -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
   </section>
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
