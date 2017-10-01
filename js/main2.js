@@ -19,6 +19,7 @@ $(document).on('ready', function() {
 
 window.onload = function() {
   play();
+  exit();
 }
 
 function play() {
