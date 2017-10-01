@@ -116,6 +116,7 @@
     });
   </script>
 
+
   <!-- ................... MOBILE BAR .......................---------->
   <!-- ............................................................. -->
   <div id="mBar" class="topbar hidden-lg-up">
@@ -153,9 +154,8 @@
       </div>
     </div>
     <div id="mMenu">
-      <a href="#menu-toggle" class="font-bar" id="menu-toggle">MENU</a>
+      <a  class="font-bar" id="menu-toggle">MENU</a>
     </div>
-    <div id="test"></div>
   </div>
 
 
@@ -201,9 +201,9 @@
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
+          <!-- Add Arrows
           <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev"></div> -->
         </div>
 
         <!-- Swiper JS -->
@@ -214,9 +214,10 @@
           var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
             spaceBetween: 0,
-            autoplay: 5000,
+            autoplay: 8000,
             autoplayDisableOnInteraction: false
           });
         </script>

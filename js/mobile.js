@@ -18,6 +18,6 @@ function open() {
 
 function exit() {
   TweenMax.to("#mobileBar", 1, {
-    x: "100%"
+    x: "-100%"
   });
 }

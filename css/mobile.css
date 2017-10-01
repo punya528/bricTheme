@@ -28,9 +28,9 @@
 }
 
 #mMenu {
-  display: flex;
-  justify-content: flex-end;
-  float: right;
+  margin-top: 2%;
+  margin-left: 2%;
+
 }
 
 #menu-toggle {
