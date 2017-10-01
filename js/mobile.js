@@ -21,3 +21,5 @@ function exit() {
     x: "-100%"
   });
 }
+
+exit();
